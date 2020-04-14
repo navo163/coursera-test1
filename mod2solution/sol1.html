@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment Solution for Module 2</title>
+	<style>
+    *{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Times New Roman" serif;
+}
+.abc{
+  width: 95%;
+  margin: auto;
+}
+.one{
+  width: 30%;
+  float: left;
+  border: 1px solid black;
+  position: relative;
+  margin: 0 1.66%;
+  background-color: grey;
+}
+h1{
+  font-size: 200%;
+  text-align: center;
+  margin-bottom: 50px ;
+}
+.one > h2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 125%;
+  text-align: center;
+  width: 150px;
+  border: 1px solid black;
+  margin: 0;
+  padding: 7px;
+}
+.one > p{
+  font-size: 100%;
+  margin-top: 50px;
+  padding: 0 14px;
+  text-align: center;
+  font-weight: bold;
+}
+.one:first-child > h2{
+  background-color: pink;
+}
+.one:nth-child(2) > h2{
+  background-color: orange;
+}
+.one:last-child > h2{
+  background-color: yellow;
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .one:first-child, .one:nth-child(2){
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .one:first-child{
+    margin-left: 0;
+      margin-right: 2%;
+  }
+  .one:nth-child(2){
+    margin-right: 0;
+  }
+  .one:last-child{
+    width: 100%;
+    margin: 0;
+  }
+}
+@media(max-width: 767px){
+  .one{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+</style>
+</head>
+<body>
+	<h1>Our Menu</h1>
+	<div class="abc">
+		<section class="one">
+			<h2>Chicken</h2>
+			<p>We do have some delicious chicken in our menu. You would definitely want to try some. We have some variety in the preparations as well. Spicy or non-spicy, Gravy or Dry, whatever your preference might be, we have some mouth-watering options for you. So what are you waiting for?</p>
+		</section>
+		<section class="one">
+			<h2>Beef</h2>
+			<p>We do have some delicious beef in our menu. You would definitely want to try some. We have some variety in the preparations as well. Spicy or non-spicy, Gravy or Dry, whatever your preference might be, we have some mouth-watering options for you. So what are you waiting for? Come over.</p>
+		</section>
+		<section class="one">
+			<h2>Sushi</h2>
+			<p>Oh ! And did I even mention about the Sushi in our menu which is not even delicious, but also very popular among our regular customers? Did you just say Sushi? Then you must be thinking about our restaurant ! So hurry and visit for a treat that you won't be forgetting anytime soon.</p>
+		</section>
+	</div>
+</body>
+</html>
